@@ -46,40 +46,59 @@ We collect perfmon counters and run sql queries to get the following metric:
 
 We provide the following metric with the buffer manager information:
 
-.. image:: 001.jpg
+1
+.. image:: MSSQLServer\001.jpg
+2
+.. image:: "MSSQLServer\001.jpg"
+3
+.. image:: MSSQLServer/001.jpg
+4
+.. image:: "MSSQLServer/001.jpg"
+5
+.. image:: \MSSQLServer\001.jpg
+6
+.. image:: /MSSQLServer/001.jpg
+7
+.. image:: .\MSSQLServer\001.jpg
+8
+.. image:: ./MSSQLServer/001.jpg
+9
+.. image:: ..\MSSQLServer\001.jpg
+10
+.. image:: ../MSSQLServer/001.jpg
 
 
 2. Database size
 
 Database size metric window provides the following information:
 
-.. figure:: MSSQLServer-Images\002.jpg
+.. figure:: . MSSQLServer\002.jpg
 
 3. Database version
 
 Database version metric window provides you with the information on the current running version of the Microsoft SQL Server.
 
-.. image::.\MSSQLServer-Images\003.jpg
-	:height: 200 px
-   	:width : 200 px
+.. image:: .\MSSQLServer\003.jpg
+
 
 	- Database error information
 
 The error information is collected via perfmon counters. Here we provide metric on DB Offline Errors, Info Errors, Kill Connection Errors and User Errors (all displayed in Errors/sec),
 
-.. image::.\MSSQLServer-Images\004.jpg
-
+.. image:: .\MSSQLServer\004.jpg
+.. image:: '.\MSSQLServer\004.jpg'
+.. image:: ".\MSSQLServer\004.jpg"
 	- Database locks
 
 Database locks metric is provided by reading the perfmon counters. The metric view is the following:
 
-.. image::.\MSSQLServer-Images\005.jpg
+.. image:: /MSSQLServer/005.jpg
 
 	- Database status
 	
 Database status information includes this metric view:
 
-.. image::.\MSSQLServer-Images\006.jpg
+.. image::./MSSQLServer/006.jpg
 
 	- Disabled jobs
 
