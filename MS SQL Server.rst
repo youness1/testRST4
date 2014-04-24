@@ -216,31 +216,35 @@ On the advanced tab of the Managed entity, add the following variables:
 | dbname                 | Geneos                     |
 +------------------------+----------------------------+
 
-
-
-sql_instance : MSSQL$NYSQLSERVER
-sql_instance_log : MSSQL10.50.NYSQLSERVER
-servername : nysupsvr08\nysqlserver
-dbname 	: Geneos
-
 - In the case of using the Local Type from step 2 and default database installation, add the following variables (string type):
 
-sql_instance : SQLServer
-sql_instance_log : MSSQL.1
-servername : nysupsvr08
-dbname	: master
++------------------------+-------------+
+| sql_instance           | SQLServer   |
++------------------------+-------------+
+| sql_instance_log       | MSSQL.1     |
++------------------------+-------------+
+| servername             | nysupsvr08  |
++------------------------+-------------+
+| dbname                 | Geneos      |
++------------------------+-------------+
 
 - In the case of using the Remote Type from step 2, add the following variables (string type):
 
-sql_instance : (see step a or b for details)
-sql_instance_log : (see step a or b for details)
-servername : (see step a or b for details)
-dbname : (see step a or b for details)
-username : actual_username
-pwd : actual_password (where the pwd variable type can be stdEncodedPassword type instead of string)
-
-
-
++------------------------+----------------------------------------------+
+| sql_instance           | (see step a or b for details)                |
++------------------------+----------------------------------------------+
+| sql_instance_log       | (see step a or b for details)                |
++------------------------+----------------------------------------------+
+| servername             | (see step a or b for details)                |
++------------------------+----------------------------------------------+
+| dbname                 | (see step a or b for details)                |
++------------------------+----------------------------------------------+
+| username               | actual_username                              |
++------------------------+----------------------------------------------+
+| pwd                    | actual_password                              |
+|                        |  (where the pwd variable type can be         |
+|                        |   stdEncodedPassword type instead of string) |
++------------------------+----------------------------------------------+
 
 
 
