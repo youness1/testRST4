@@ -5,7 +5,7 @@ MS SQL Server
 
 
 I. Overview
-========
+===========
 
 This template is used to monitor the SQL Server 2005 or 2008. It produces metrics in these categories:
 
@@ -17,7 +17,7 @@ The solution consists of an include file that contains all required samplers (FK
 
 
 II. Detailed solution
-=================
+=====================
 
 
 Monitoring the SQL Server database
@@ -168,7 +168,7 @@ Where $(sql_instance_log) depends on whether you are using a default database in
 
 
 III. Using the solution template
-===========================
+================================
 
 This part covers how to implement this solution template in an existing Geneos environment
 
@@ -243,8 +243,8 @@ On the advanced tab of the Managed entity, add the following variables:
 +------------------------+----------------------------------------------+
 | pwd                    | actual_password                              |
 |                        |                                              |
-|                        | where the pwd variable type can be           |
-|                        | stdEncodedPassword type instead of string    |
+|                        | (where the pwd variable type can be           |
+|                        | stdEncodedPassword type instead of string)    |
 +------------------------+----------------------------------------------+
 
 
