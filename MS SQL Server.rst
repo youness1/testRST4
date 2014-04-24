@@ -47,14 +47,14 @@ We collect perfmon counters and run sql queries to get the following metric:
 We provide the following metric with the buffer manager information:
 
 .. image:: ./MSSQLServer/001.jpg
-:align: center
+	:align: center
 
 2. Database size
 
 Database size metric window provides the following information:
 
 .. image:: ./MSSQLServer/002.jpg
-:align: center
+	:align: center
 
 3. Database version
 
