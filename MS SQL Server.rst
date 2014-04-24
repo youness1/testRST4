@@ -46,25 +46,35 @@ We collect perfmon counters and run sql queries to get the following metric:
 
 We provide the following metric with the buffer manager information:
 
-1
+1a
+==
 .. image:: MSSQLServer\001.jpg
-2
+2a
+==
 .. image:: "MSSQLServer\001.jpg"
-3
+3a
+==
 .. image:: MSSQLServer/001.jpg
-4
+4a
+==
 .. image:: "MSSQLServer/001.jpg"
-5
+5a
+==
 .. image:: \MSSQLServer\001.jpg
-6
+6a
+==
 .. image:: /MSSQLServer/001.jpg
-7
+7a
+==
 .. image:: .\MSSQLServer\001.jpg
-8
+8a
+==
 .. image:: ./MSSQLServer/001.jpg
-9
+9a
+==
 .. image:: ..\MSSQLServer\001.jpg
-10
+10a
+==
 .. image:: ../MSSQLServer/001.jpg
 
 
