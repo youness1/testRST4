@@ -242,7 +242,6 @@ On the advanced tab of the Managed entity, add the following variables:
 | username               | actual_username                              |
 +------------------------+----------------------------------------------+
 | pwd                    | actual_password                              |
-|                        |                                              |
 |                        | (where the pwd variable type can be          |
 |                        | stdEncodedPassword type instead of string)   |
 +------------------------+----------------------------------------------+
