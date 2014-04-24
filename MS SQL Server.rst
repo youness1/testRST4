@@ -4,7 +4,7 @@ MS SQL Server
 
 
 
-Overview
+I. Overview
 ========
 
 This template is used to monitor the SQL Server 2005 or 2008. It produces metrics in these categories:
@@ -16,7 +16,7 @@ This template is used to monitor the SQL Server 2005 or 2008. It produces metric
 The solution consists of an include file that contains all required samplers (FKM, Processes, Perfmon and SQL Toolkit), sampler includes (FKM, Processes) and types.
 
 
-Detailed solution
+II. Detailed solution
 =================
 
 
@@ -167,66 +167,65 @@ Where $(sql_instance_log) depends on whether you are using a default database in
 (see more details in Using the solution template)
 
 
-Using the solution template
+III. Using the solution template
 ===========================
 
 This part covers how to implement this solution template in an existing Geneos environment
 
-Apply the include file
+1. Apply the include file
 ----------------------
 
 The solution template consists of the include file that needs to be included in the main gateway setup file.
 
-Choose and apply the type
+2. Choose and apply the type
 -------------------------
 
 The include file has the following types that need to be added to the Managed Entity or the Managed Entity group:
 
-*	SQL_SERVER_2008_Local
-*	SQL_SERVER_2005_Local
-*	SQL_SERVER_Remote
+* SQL_SERVER_2008_Local
+* SQL_SERVER_2005_Local
+* SQL_SERVER_Remote
 
 The Local Type is to be used if the netprobe is running on the SQL Server host.
 
 If the netprobe is running on a host remote to the SQL Server, please use the Remote Type.
 
 
-Enable log and process monitoring
+3. Enable log and process monitoring
 ---------------------------------
 
 On the Managed Entity that will have one of these types, the following is required:
 
-*	Enable FKM and Processes sampler in the Basic Tab of the Managed Entity
-*	Enable SQL Server Processes and SQL Server Error Log sampler includes in the Advanced Tab
+* Enable FKM and Processes sampler in the Basic Tab of the Managed Entity
+* Enable SQL Server Processes and SQL Server Error Log sampler includes in the Advanced Tab
 
 
-Add the variables to the Managed Entity advanced tab
+4. Add the variables to the Managed Entity advanced tab
 ----------------------------------------------------
 On the advanced tab of the Managed entity, add the following variables:
 
-	- In the case of using the Local Type from step 2 and named instance installation, add the following variables (string type):
+- In the case of using the Local Type from step 2 and named instance installation, add the following variables (string type):
 
-	sql_instance 		: MSSQL$NYSQLSERVER
-	sql_instance_log 	: MSSQL10.50.NYSQLSERVER
-	servername 			: nysupsvr08\nysqlserver
-	dbname 				: Geneos
+sql_instance : MSSQL$NYSQLSERVER
+sql_instance_log : MSSQL10.50.NYSQLSERVER
+servername : nysupsvr08\nysqlserver
+dbname 	: Geneos
 
-	- In the case of using the Local Type from step 2 and default database installation, add the following variables (string type):
+- In the case of using the Local Type from step 2 and default database installation, add the following variables (string type):
 
-	sql_instance 		: SQLServer
-	sql_instance_log 	: MSSQL.1
-	servername 			: nysupsvr08
-	dbname 				: master
+sql_instance : SQLServer
+sql_instance_log : MSSQL.1
+servername : nysupsvr08
+dbname	: master
 
-	- In the case of using the Remote Type from step 2, add the following variables (string type):
+- In the case of using the Remote Type from step 2, add the following variables (string type):
 
-	sql_instance 		: (see step a or b for details)
-	sql_instance_log 	: (see step a or b for details)
-	servername 			: (see step a or b for details)
-	dbname 				: (see step a or b for details)
-	username			: actual_username
-	pwd					: actual_password
-	(where the pwd variable type can be stdEncodedPassword type instead of string)
+sql_instance : (see step a or b for details)
+sql_instance_log : (see step a or b for details)
+servername : (see step a or b for details)
+dbname : (see step a or b for details)
+username : actual_username
+pwd : actual_password (where the pwd variable type can be stdEncodedPassword type instead of string)
 
 
 
