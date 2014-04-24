@@ -206,6 +206,18 @@ On the advanced tab of the Managed entity, add the following variables:
 
 - In the case of using the Local Type from step 2 and named instance installation, add the following variables (string type):
 
++------------------------+----------------------------+
+| sql_instance           | MSSQL$NYSQLSERVER          |
++------------------------+----------------------------+
+| sql_instance_log       | MSSQL10.50.NYSQLSERVER     |
++------------------------+----------------------------+
+| servername             | nysupsvr08\nysqlserver     |
++------------------------+----------------------------+
+| dbname                 | Geneos                     |
++------------------------+----------------------------+
+
+
+
 sql_instance : MSSQL$NYSQLSERVER
 sql_instance_log : MSSQL10.50.NYSQLSERVER
 servername : nysupsvr08\nysqlserver
