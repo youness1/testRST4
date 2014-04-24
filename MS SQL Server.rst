@@ -47,12 +47,14 @@ We collect perfmon counters and run sql queries to get the following metric:
 We provide the following metric with the buffer manager information:
 
 .. image:: ./MSSQLServer/001.jpg
+:align: center
 
 2. Database size
 
 Database size metric window provides the following information:
 
 .. image:: ./MSSQLServer/002.jpg
+:align: center
 
 3. Database version
 
@@ -63,60 +65,70 @@ Database version metric window provides you with the information on the current 
 The error information is collected via perfmon counters. Here we provide metric on DB Offline Errors, Info Errors, Kill Connection Errors and User Errors (all displayed in Errors/sec),
 
 .. image:: ./MSSQLServer/003.jpg
+:align: center
 
 5. Database locks
 
 Database locks metric is provided by reading the perfmon counters. The metric view is the following:
 
 .. image:: ./MSSQLServer/004.jpg
+:align: center
 
 6. Database status
 	
 Database status information includes this metric view:
 
 .. image:: ./MSSQLServer/005.jpg
+:align: center
 
 7. Disabled jobs
 
 Disabled jobs are a list acquired by running a sql query. The metric gives details on the date created, date modified and the description of the job, as presented in the following metric view:
 
 .. image:: ./MSSQLServer/006.jpg
+:align: center
 
 8. Job status
 
 Job status information is collected by running a sql query. The following is a metric view with all the details provided:
 
 .. image:: ./MSSQLServer/007.jpg
+:align: center
 
 9. Last backups
 
 The following is the metric view that provides the results of the queries ran to collect the info on the last ran backups:
 
 .. image:: ./MSSQLServer/008.jpg
+:align: center
 
 10. Latches
 
 The following is the metric view that provides the information on the latched (acquired by running sql query):
 
 .. image:: ./MSSQLServer/009.jpg
+:align: center
 
 11. Locks
 
 Locks metric is provided by running a sql query. The following is the metric window with all the locks details:
 
 .. image:: ./MSSQLServer/010.jpg
+:align: center
 
 12. Long running queries
 
 Long running queries metric is the following:
 
 .. image:: ./MSSQLServer/011.jpg
+:align: center
 
 13. Memory manager
 
 Memory manager stats are collected via perfmon counters. The following is the metric view:
 
 .. image:: ./MSSQLServer/012.jpg
+:align: center
 
 14. Primary cluster information
 
@@ -128,6 +140,7 @@ It is gathered by running a sql query.
 Server status statistics are collected by reading the perfmon counters. These counters provide the following information:
 
 .. image:: ./MSSQLServer/013.jpg
+:align: center
 
 Monitoring the SQL Server processes
 ----------------------------------
