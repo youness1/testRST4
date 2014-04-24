@@ -116,7 +116,7 @@ Long running queries metric is the following:
 
 Memory manager stats are collected via perfmon counters. The following is the metric view:
 
-.. image::./MSSQLServer/012.jpg
+.. image:: ./MSSQLServer/012.jpg
 
 14. Primary cluster information
 
