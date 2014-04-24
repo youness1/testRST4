@@ -58,78 +58,76 @@ Database size metric window provides the following information:
 
 Database version metric window provides you with the information on the current running version of the Microsoft SQL Server.
 
-.. image:: ./MSSQLServer/003.jpg
-
-
-	- Database error information
+4. Database error information
 
 The error information is collected via perfmon counters. Here we provide metric on DB Offline Errors, Info Errors, Kill Connection Errors and User Errors (all displayed in Errors/sec),
 
-.. image:: ./MSSQLServer/004.jpg
-	- Database locks
+.. image:: ./MSSQLServer/003.jpg
+
+5. Database locks
 
 Database locks metric is provided by reading the perfmon counters. The metric view is the following:
 
-.. image:: ./MSSQLServer/005.jpg
+.. image:: ./MSSQLServer/004.jpg
 
-	- Database status
+6. Database status
 	
 Database status information includes this metric view:
 
-.. image:: ./MSSQLServer/006.jpg
+.. image:: ./MSSQLServer/005.jpg
 
-	- Disabled jobs
+7. Disabled jobs
 
 Disabled jobs are a list acquired by running a sql query. The metric gives details on the date created, date modified and the description of the job, as presented in the following metric view:
 
-.. image:: ./MSSQLServer/007.jpg
+.. image:: ./MSSQLServer/006.jpg
 
-	- Job status
+8. Job status
 
 Job status information is collected by running a sql query. The following is a metric view with all the details provided:
 
-.. image:: ./MSSQLServer/008.jpg
+.. image:: ./MSSQLServer/007.jpg
 
-	- Last backups
+9. Last backups
 
 The following is the metric view that provides the results of the queries ran to collect the info on the last ran backups:
 
-.. image:: ./MSSQLServer/009.jpg
+.. image:: ./MSSQLServer/008.jpg
 
-	- Latches
+10. Latches
 
 The following is the metric view that provides the information on the latched (acquired by running sql query):
 
-.. image:: ./MSSQLServer/010.jpg
+.. image:: ./MSSQLServer/009.jpg
 
-	- Locks
+11. Locks
 
 Locks metric is provided by running a sql query. The following is the metric window with all the locks details:
 
-.. image:: ./MSSQLServer/011.jpg
+.. image:: ./MSSQLServer/010.jpg
 
-	- Long running queries
+12. Long running queries
 
 Long running queries metric is the following:
 
-.. image:: ./MSSQLServer/012.jpg
+.. image:: ./MSSQLServer/011.jpg
 
-	- Memory manager
+13. Memory manager
 
 Memory manager stats are collected via perfmon counters. The following is the metric view:
 
-.. image::./MSSQLServer/013.jpg
+.. image::./MSSQLServer/012.jpg
 
-	- Primary cluster information
+14. Primary cluster information
 
 Primary cluster information gives you the info on the cluster name and the server name.
 It is gathered by running a sql query.
 
-	- Server status
+15. Server status
 
 Server status statistics are collected by reading the perfmon counters. These counters provide the following information:
 
-.. image::.\MSSQLServer-Images\001.jpg
+.. image:: ./MSSQLServer/013.jpg
 
 Monitoring the SQL Server processes
 ----------------------------------
